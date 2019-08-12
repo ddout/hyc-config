@@ -28,3 +28,8 @@ spring:
     propagation-keys:
       - x-hyc-session-id
       - x-hyc-user-id
+  datasource:
+    url:jdbc:mysql://192.168.11.234:3306/hyc?useUnicode=true&characterEncoding=utf8&useSSL=false&serverTimezone=GMT%2B8
+    username:root
+    password:123456
+    driver-class-name:com.mysql.cj.jdbc.Driver
