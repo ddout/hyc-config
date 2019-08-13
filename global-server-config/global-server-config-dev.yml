@@ -1,7 +1,7 @@
 hyc:
   gateway:
-    ip: "@hyc.gateway.ip@"
-    port: "@hyc.gateway.port@"
+    ip: @hyc.gateway.ip@
+    port: @hyc.gateway.port@
 
 eureka-user:
   name: ddout
