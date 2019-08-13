@@ -28,37 +28,5 @@ spring:
     propagation-keys:
       - x-hyc-session-id
       - x-hyc-user-id
-  datasource:
-    druid:
-      stat-view-servlet:
-          enabled: true
-          loginUsername: admin
-          loginPassword: 123456
-        web-stat-filter:
-          enabled: true
-    dynamic:
-      druid:
-        initial-size: 5
-        min-idle: 5
-        maxActive: 20
-        maxWait: 60000
-        timeBetweenEvictionRunsMillis: 60000
-        minEvictableIdleTimeMillis: 300000
-        validationQuery: SELECT 1 FROM
-        testWhileIdle: true
-        testOnBorrow: false
-        testOnReturn: false
-        poolPreparedStatements: true
-        maxPoolPreparedStatementPerConnectionSize: 20
-        filters: stat,wall,slf4j
-        connectionProperties: druid.stat.mergeSql\=true;druid.stat.slowSqlMillis\=5000
-      datasource:
-        master:
-          url: jdbc:mysql://192.168.11.234:3306/hyc?characterEncoding=UTF-8&useUnicode=true&useSSL=false
-          username: root
-          password: 123456
-          driver-class-name: com.mysql.jdbc.Driver
 
-mybatis:
-  mapper-locations: "classpath:mapper/*.xml"
 
